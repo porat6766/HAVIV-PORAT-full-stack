@@ -1,6 +1,6 @@
 import Joke from "../models/jokesModel.js";
 
-const pageHome = (req, res) => {
+const homePage = (req, res) => {
   res.send("page-jokes");
 };
 
@@ -138,7 +138,7 @@ const daeleteJokeByID = async (req, res) => {
 export const controllerJoke = {
   getAllJokes,
   getRandonJoke,
-  pageHome,
+  homePage,
   createJoke,
   getJokeByID,
   updateAPartJoke,

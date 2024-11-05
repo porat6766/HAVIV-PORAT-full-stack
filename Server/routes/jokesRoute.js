@@ -4,7 +4,7 @@ import validatorJoke from "../middleware/jokeValidator.js";
 
 const router = express.Router();
 
-router.get("/", controllerJoke.pageHome);
+router.get("/", controllerJoke.homePage);
 
 router.get("/all", controllerJoke.getAllJokes);
 

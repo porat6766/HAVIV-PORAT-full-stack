@@ -1,12 +1,15 @@
 import express from "express";
 import morgan from "morgan";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import cors from "cors";
+
+import handleEror from "./middleware/handleEror.js";
+import logRequest from "./middleware/logger.js";
+
 import jokeRoute from "./routes/jokesRoute.js";
 import productRoute from "./routes/productsRoute.js";
 import usersRoute from "./routes/usersRouts.js";
-import logRequest from "./middleware/logger.js";
-import handleEror from "./middleware/handleEror.js";
-import mongoose from "mongoose";
-import dotenv from "dotenv";
 
 dotenv.config();
 const uri = process.env.DB_ULI;
@@ -25,6 +28,7 @@ const PORT = 3001;
 
 app.use(express.json());
 app.use(morgan("short"));
+app.use(cors());
 
 app.use(logRequest);
 app.use(handleEror);

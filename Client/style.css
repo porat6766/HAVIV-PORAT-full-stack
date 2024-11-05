@@ -1,0 +1,18 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+#jokes-list {
+    background-color: aqua;
+    height: 200px;
+    color: black;
+}
+
+.liJoke {
+    height: 100px;
+    background-color: rgb(231, 114, 114);
+    z-index: 1;
+}
