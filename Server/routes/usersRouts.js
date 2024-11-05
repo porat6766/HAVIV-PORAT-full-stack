@@ -11,6 +11,8 @@ router.get("/random", controllerUsers.getRandonUser);
 
 router.post("/create", controllerUsers.createUser);
 
+router.post("/login", controllerUsers.loginUser);
+
 router.get("/:id", controllerUsers.getUserByID);
 
 router.patch("/update/part/:id", controllerUsers.updateAPartUser);

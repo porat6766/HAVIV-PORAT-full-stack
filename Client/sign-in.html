@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-Up Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="style-sign-in.css" />
   </head>
   <body>
-    <div id="container-sign-up">
-      <h1 id="sign-up-title">Sign Up</h1>
-      <form id="form-sign-up">
-        <label for="username">Username</label>
-        <input placeholder="User name..." type="text" id="username" required />
-
+    <div id="container-sign-in">
+      <h1 id="sign-in-title">Sign In</h1>
+      <form id="form-sign-in">
         <label for="email">Email</label>
         <input placeholder="Email..." type="email" id="email" required />
 
@@ -23,10 +20,8 @@
           id="password"
           required
         />
-        <label for="age">Age</label>
-        <input placeholder="Age..." type="number" id="age" min="18" required />
 
-        <button type="submit" id="sign-up-btn">Sign Up</button>
+        <button type="submit" id="sign-in-btn">Sign In</button>
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
