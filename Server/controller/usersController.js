@@ -1,4 +1,22 @@
 import User from "../models/userModel.js";
+import bcrypt from "bcryptjs";
+import dotenv from "dotenv";
+
+dotenv.config();
+const hashKey = process.env.HashKey;
+const secretKey = hashKey;
+console.log(secretKey);
+
+const hashPassword = async (userPassword) => {
+  const saltRounds = 10;
+  const combinedPassword = userPassword + secretKey;
+  return await bcrypt.hash(combinedPassword, saltRounds);
+};
+
+const comparePassword = async (userPassword, dbHash) => {
+  const combinedPassword = userPassword + secretKey;
+  return await bcrypt.compare(combinedPassword, dbHash);
+};
 
 const homePage = (req, res) => {
   res.send("page-users");
@@ -25,21 +43,52 @@ const getRandonUser = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
-  const newUser = new User({
-    username: req.body.username,
-    email: req.body.email,
-    password: req.body.password,
-    age: req.body.age,
-  });
-
   try {
+    const hashValuePassword = await hashPassword(req.body.password);
+
+    const newUser = new User({
+      username: req.body.username,
+      email: req.body.email,
+      password: hashValuePassword,
+      age: req.body.age,
+    });
+
     await newUser.save();
     res.status(201).send({
       message: "User created successfully!",
-      id: newUser,
+      id: newUser._id,
     });
   } catch (error) {
     console.error("Error saving user:", error);
+    res.status(500).send("Internal Server Error");
+  }
+};
+
+const loginUser = async (req, res) => {
+  const { email, password } = req.body;
+  console.log(req.body);
+
+  try {
+    const foundUser = await User.findOne({ email });
+    console.log(foundUser);
+
+    if (!foundUser) {
+      return res.status(404).send({ message: "User not found!" });
+    }
+
+    const isAuth = await comparePassword(password, foundUser.password);
+    // console.log(isAuth);
+
+    if (!isAuth) {
+      return res.status(401).send({ message: "Invalid password!" });
+    }
+
+    res.status(200).send({
+      message: "User logged in successfully!",
+      message: isAuth,
+    });
+  } catch (error) {
+    console.error("Error logging in user:", error);
     res.status(500).send("Internal Server Error");
   }
 };
@@ -149,4 +198,5 @@ export const controllerUsers = {
   updateAllUser,
   deleteUserByID,
   getAllUser,
+  loginUser,
 };

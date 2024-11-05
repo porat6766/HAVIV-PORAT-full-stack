@@ -1,0 +1,61 @@
+/*sign-up-page*/
+
+#sign-up-title {
+    font-weight: 800;
+    font-size: 36px;
+    color: teal;
+    margin-bottom: 20px;
+}
+
+#container-sign-up {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-sign-up {
+    color: white;
+    padding: 30px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+#sign-up-btn {
+    margin-top: 18px;
+    margin-bottom: 0;
+    background-color: teal;
+}
+
+#sign-in-title {
+    font-weight: 800;
+    font-size: 36px;
+    color: teal;
+    margin-bottom: 20px;
+}
+
+#container-sign-in {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-sign-in {
+    color: white;
+    padding: 30px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+#sign-in-btn {
+    margin-top: 18px;
+    margin-bottom: 0;
+    background-color: teal;
+}
