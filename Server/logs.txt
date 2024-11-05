@@ -88,3 +88,567 @@
   Query parameters received: {} 
   Body parameters received: {"email":"porat1@gmail.com","password":"porat1111"} 
   Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:23:58 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"porat","email":"porat850@gmail.com","password":"pop908090","age":"23"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:24:07 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"porat850@gmail.com","password":"pop908090"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:48:49 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:49:36 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:49:46 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:50:16 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:50:50 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:51:20 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:52:18 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:52:36 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"setup":"sdsghfhj hmsnd","punchLine":"jshdfbjsjhdfbwhdgweigdb","owner":"672a44d921cf8804a53d6722"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:52:37 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"setup":"sdsghfhj hmsnd","punchLine":"jshdfbjsjhdfbwhdgweigdb","owner":"672a44d921cf8804a53d6722"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:52:38 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"setup":"sdsghfhj hmsnd","punchLine":"jshdfbjsjhdfbwhdgweigdb","owner":"672a44d921cf8804a53d6722"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:52:40 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:52:42 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:52:52 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:53:35 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:54:00 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:54:33 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:54:48 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:55:15 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:55:39 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:55:50 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:56:34 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:57:05 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:57:15 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:57:46 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:58:26 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:58:41 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:58:43 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:58:43 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:58:43 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:58:43 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:58:47 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:59:16 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:59:22 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:59:43 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:59:44 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 8:59:44 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:00:12 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:00:37 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:00:47 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:00:47 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:03:04 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:11:17 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:11:30 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:17:16 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:17:50 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:18:28 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:18:29 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:18:50 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:23:11 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"jsdhgf","email":"porat850@gmail.com","password":"20jkjhgf","age":"20"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:23:18 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"porat850@gmail.com","password":"pop908090"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:23:27 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"porat850@gmail.com","password":"jkhghfg"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:23:33 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"porat850@gmail.com","password":"pop908090"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:23:36 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:26:34 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:26:36 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:27:25 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:27:49 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:28:21 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:28:37 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:28:59 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:29:41 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:29:50 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:30:07 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:30:09 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:30:56 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:31:20 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:33:13 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:34:36 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:34:39 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:35:55 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:35:57 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:35:59 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:21 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:29 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:33 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:34 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:37 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:37 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:39 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:40 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:40 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:36:40 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:02 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:06 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:06 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:09 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:10 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:12 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:53 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:54 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:37:56 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 9:38:07 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 

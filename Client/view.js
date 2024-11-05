@@ -1,17 +1,18 @@
-
-
 const renderJokes = (jokes) => {
-  const jokesList = document.getElementById("jokes-list");
-  jokesList.innerHTML = "";
+  const jokesDisplay = document.getElementById("jokes-display");
+  jokesDisplay.innerHTML = "";
+
   jokes.forEach((joke) => {
     const liJoke = document.createElement("li");
-    liJoke.classList.add("liJoke");
+    liJoke.classList.add("li-joke-item");
     liJoke.innerHTML = `
-        <h3>Joke numberId=${joke._id}</h3>
-        <p>setup:${joke.setup}</p>
-        <p>punchLine:${joke.punchLine}</p>
-      `;
-    jokesList.appendChild(liJoke);
+      <div class="joke-content">
+        <h3 class="joke-number">Joke owner: ${joke.owner}</h3>
+        <p class="joke-setup">Setup: ${joke.setup}</p>
+        <p class="joke-punchline">Punchline: ${joke.punchLine}</p>
+      </div>
+    `;
+    jokesDisplay.appendChild(liJoke);
   });
 };
 

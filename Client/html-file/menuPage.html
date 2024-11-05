@@ -3,26 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JOKES-PROJECT</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Jokes Menu</title>
+    <link rel="stylesheet" href="style-menu.css" />
   </head>
   <body>
-    <div class="all">
-      <h1>Jokes and Users</h1>
-
-      <button id="get-all-joke">Load All Jokes</button>
+    <div class="menu-container">
+      <h1>Jokes Menu</h1>
+      <button id="get-user-jokes">Get My Jokes</button>
       <button id="get-random-joke">Get Random Joke</button>
-
-      <input type="text" id="user-id" placeholder="Enter User ID" />
-      <button class="get-jokes-byID">Get Jokes by User ID</button>
-
-      <h2>Jokes:</h2>
-      <ul id="jokes-list"></ul>
-
-      <h2>Users:</h2>
-      <ul id="users-list"></ul>
+      <button id="get-all-jokes">Get All Jokes</button>
+      <button id="add-window">Add joke</button>
+      <form id="add-joke-form" class="hidden">
+        <input
+          type="text"
+          id="joke-setup"
+          placeholder="Enter your setup..."
+          required
+        />
+        <input
+          type="text"
+          id="joke-punchLine"
+          placeholder="Enter your punchLine..."
+          required
+        />
+        <button type="submit">Add Joke</button>
+      </form>
+    </div>
+    <div class="container-ul-jokes">
+      <ul id="jokes-display"></ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="../main.js"></script>
+    <script src="../main.js" type="module"></script>
   </body>
 </html>
