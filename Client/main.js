@@ -7,7 +7,6 @@ import { userModel } from "./models/userModel.js";
 // const userIdInput = document.getElementById("user-id");
 
 // Element sign up
-// const containerSignUp = document.getElementById("container-sign-up");
 const formSignUp = document.getElementById("form-sign-up");
 const usernameInput = document.getElementById("username");
 const emailInput = document.getElementById("email");
@@ -18,17 +17,19 @@ const ageInput = document.getElementById("age");
 const formSignIn = document.getElementById("form-sign-in");
 const passwordSignIn = document.getElementById("password");
 const emailSignIn = document.getElementById("email");
+const messageSignIn = document.getElementById("loginMessage");
 
 if (formSignUp) {
   formSignUp.addEventListener("submit", (event) => {
     event.preventDefault();
-    userModel.createUser(
+    const dataIsSave = userModel.createUser(
       usernameInput.value,
       emailInput.value,
       passwordInput.value,
       ageInput.value
     );
-    window.location.href = "./html-file/sign-in.html";
+    console.log(dataIsSave);
+    if (dataIsSave) window.location.href = "./html-file/sign-in.html";
   });
 }
 
@@ -37,8 +38,13 @@ if (formSignIn) {
     ev.preventDefault();
     const body = { email: emailSignIn.value, password: passwordSignIn.value };
 
-    await userModel.getAccessUser(body);
-    window.location.href = "menuPage.html";
+    const loginResponse = await userModel.getAccessUser(body);
+    console.log(loginResponse);
+    if (!loginResponse) {
+      messageSignIn.textContent = "The email or password is incorrect";
+    } else {
+      window.location.href = "menuPage.html";
+    }
   });
 }
 
