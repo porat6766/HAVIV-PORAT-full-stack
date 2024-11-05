@@ -30,6 +30,10 @@ if (formSignUp) {
     );
     window.location.href = "./html-file/sign-in.html";
   });
+  (usernameInput.value = ""),
+    (emailInput.value = ""),
+    (passwordInput.value = ""),
+    (ageInput.value = "");
 }
 
 if (formSignIn) {
