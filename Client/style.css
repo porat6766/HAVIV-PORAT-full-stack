@@ -4,15 +4,27 @@ html {
     margin: 0;
 }
 
-
 #jokes-list {
     background-color: aqua;
-    height: 200px;
-    color: black;
+    height: 220px;
+    color: #333;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .liJoke {
-    height: 100px;
-    background-color: rgb(231, 114, 114);
-    z-index: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffe3e3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
+    list-style: none;
 }
