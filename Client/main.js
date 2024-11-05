@@ -28,7 +28,7 @@ if (formSignUp) {
       passwordInput.value,
       ageInput.value
     );
-    window.location.href = "sign-in.html";
+    window.location.href = "./html-file/sign-in.html";
   });
 }
 

@@ -12022,3 +12022,33 @@
   Query parameters received: {} 
   Body parameters received: {"email":"porat850@gmail.com","password":"pop908090"} 
   Status Code: 200 
+
+  Activity received at: 11/5/2024, 6:45:11 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"porat","email":"porat850@gmail.com","password":"jhgf","age":"22"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 6:45:58 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"porat","email":"porat850@gmail.com","password":"bjhbgfcgd","age":"22"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 6:46:43 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"porat","email":"porat850@gmail.com","password":"njbhg","age":"22"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 6:47:45 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"porat","email":"porat850@gmail.com","password":"פםפ908090","age":"22"} 
+  Status Code: 200 
+
+  Activity received at: 11/5/2024, 6:48:38 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"porat850@gmail.com","password":"pop908090"} 
+  Status Code: 200 
