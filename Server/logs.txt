@@ -700,3 +700,15 @@
   Query parameters received: {} 
   Body parameters received: {"email":"porat850@gmail.com","password":"pop908090"} 
   Status Code: 200 
+
+  Activity received at: 11/6/2024, 9:27:23 AM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"khgjgjblihnj","email":"poru@gmail.com","password":"ljkgjfh","age":"315132"} 
+  Status Code: 200 
+
+  Activity received at: 11/6/2024, 9:28:37 AM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"porat850@gmail.com","password":"pop908090"} 
+  Status Code: 200 
