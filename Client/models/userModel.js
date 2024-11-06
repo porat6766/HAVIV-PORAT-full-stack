@@ -1,12 +1,4 @@
-const APICallCreateUser = async (body) => {
-  try {
-    return await axios.post(`http://localhost:3001/api/users/create`, body);
-    // console.log("User created successfully");
-  } catch (error) {
-    console.error("Error creating user:", error);
-  }
-};
-
+//create user
 const createUser = async (username, email, password, age) => {
   const userData = {
     username,
@@ -15,9 +7,11 @@ const createUser = async (username, email, password, age) => {
     age,
   };
   try {
-    return await axios.post(`http://localhost:3001/api/users/create`, userData);
+    await axios.post(`http://localhost:3001/api/users/create`, userData);
+    return true;
   } catch (error) {
     console.error("Error creating user:", error);
+    return false;
   }
 };
 

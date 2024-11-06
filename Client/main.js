@@ -18,6 +18,7 @@ const emailSignIn = document.getElementById("email");
 const messageSignIn = document.getElementById("loginMessage");
 
 // Element menu page
+const jokesDisplay = document.getElementById("jokes-display");
 const getUserJokesButton = document.getElementById("get-user-jokes");
 const getRandomJokeButton = document.getElementById("get-random-joke");
 const getAllJokesButton = document.getElementById("get-all-jokes");
@@ -30,23 +31,29 @@ if (formSignUp) {
   formSignUp.addEventListener("submit", async (event) => {
     event.preventDefault();
     try {
-      await createUser(
+      const res = await createUser(
         usernameInput.value,
         emailInput.value,
         passwordInput.value,
         ageInput.value
       );
+      console.log(res);
 
-      alert("Sign up successful!!");
-      window.location.href = "./html-file/sign-in.html";
+      if (res) {
+        alert("Sign up successful!!");
+        window.location.href = "./html-file/sign-in.html";
+      } else {
+        alert("Error: Sign up failed. Please try again.");
+      }
     } catch (error) {
       console.error(error);
+    } finally {
+      (usernameInput.value = ""),
+        (emailInput.value = ""),
+        (passwordInput.value = ""),
+        (ageInput.value = "");
     }
   });
-  (usernameInput.value = ""),
-    (emailInput.value = ""),
-    (passwordInput.value = ""),
-    (ageInput.value = "");
 }
 
 if (formSignIn) {
@@ -77,6 +84,7 @@ if (addWindowButton) {
 //get User Jokes Button
 if (getAllJokesButton) {
   getAllJokesButton.addEventListener("click", async () => {
+    jokesDisplay.classList.toggle("hidden");
     try {
       const jokes = await jokeModel.fetchJokesAll("all");
       view.renderJokes(jokes);
@@ -90,6 +98,7 @@ if (getAllJokesButton) {
 //get random Jokes Button
 if (getRandomJokeButton) {
   getRandomJokeButton.addEventListener("click", async () => {
+    jokesDisplay.classList.toggle("hidden");
     try {
       const jokes = await jokeModel.fetchJokesAll("random");
       view.renderJokes([jokes]);

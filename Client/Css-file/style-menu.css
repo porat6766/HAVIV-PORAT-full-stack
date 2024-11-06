@@ -3,15 +3,24 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 20px;
+    height: 100vh;
+}
+
+body {
+    background-image: url("../Logo/66363026-a8bd-4f18-9372-78be2c1aa42d.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .menu-container {
-    background-color: #fff;
+    background-color: #e3adad;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 400px;
     margin: auto;
+    margin-top: 32px;
 }
 
 h1 {
@@ -60,14 +69,13 @@ input {
 }
 
 #jokes-display {
-    height: 200px;
+    height: 146px;
     width: fit-content;
     list-style: none;
     margin: auto;
     padding: 0;
     margin-top: 30px;
     overflow-y: auto;
-
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -105,4 +113,10 @@ input {
 .joke-setup,
 .joke-punchline {
     margin: 5px 0;
+}
+
+#add-joke-form {
+    padding: 10px;
+    background-color: rgb(157, 178, 131);
+    border-radius: 8px;
 }

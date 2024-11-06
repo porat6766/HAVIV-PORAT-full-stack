@@ -5,6 +5,13 @@ html {
     height: 100vh;
 }
 
+body {
+    background-image: url("../Logo/image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* 
 #jokes-list {
     background-color: aqua;
