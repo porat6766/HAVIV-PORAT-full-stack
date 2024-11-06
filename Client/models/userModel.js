@@ -1,7 +1,7 @@
 const APICallCreateUser = async (body) => {
   try {
-    await axios.post(`http://localhost:3001/api/users/create`, body);
-    console.log("User created successfully");
+    return await axios.post(`http://localhost:3001/api/users/create`, body);
+    // console.log("User created successfully");
   } catch (error) {
     console.error("Error creating user:", error);
   }
@@ -9,15 +9,16 @@ const APICallCreateUser = async (body) => {
 
 const createUser = async (username, email, password, age) => {
   const userData = {
-    username: username,
-    email: email,
-    password: password,
-    age: age,
+    username,
+    email,
+    password,
+    age,
   };
-  console.log(userData);
-
-  await APICallCreateUser(userData);
-  return true;
+  try {
+    return await axios.post(`http://localhost:3001/api/users/create`, userData);
+  } catch (error) {
+    console.error("Error creating user:", error);
+  }
 };
 
 //authontocation user
@@ -32,7 +33,4 @@ const getAccessUser = async (body) => {
   }
 };
 
-export const userModel = {
-  createUser,
-  getAccessUser,
-};
+export { createUser, getAccessUser };

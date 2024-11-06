@@ -1,4 +1,4 @@
-import { userModel } from "./models/userModel.js";
+import { createUser, getAccessUser } from "./models/userModel.js";
 import { jokeModel } from "./models/jokeModel.js";
 import { view } from "./view.js";
 
@@ -27,17 +27,21 @@ const jokeSetupInput = document.getElementById("joke-setup");
 const jokePunchlineInput = document.getElementById("joke-punchline");
 
 if (formSignUp) {
-  formSignUp.addEventListener("submit", (event) => {
+  formSignUp.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const dataIsSave = userModel.createUser(
-      usernameInput.value,
-      emailInput.value,
-      passwordInput.value,
-      ageInput.value
-    );
-    console.log(dataIsSave);
-    if (dataIsSave) window.location.href = "./html-file/sign-in.html";
-    alert("Sign up successful!!");
+    try {
+      await createUser(
+        usernameInput.value,
+        emailInput.value,
+        passwordInput.value,
+        ageInput.value
+      );
+
+      alert("Sign up successful!!");
+      window.location.href = "./html-file/sign-in.html";
+    } catch (error) {
+      console.error(error);
+    }
   });
   (usernameInput.value = ""),
     (emailInput.value = ""),
@@ -51,7 +55,7 @@ if (formSignIn) {
     ev.preventDefault();
     const body = { email: emailSignIn.value, password: passwordSignIn.value };
 
-    const loginResponse = await userModel.getAccessUser(body);
+    const loginResponse = await getAccessUser(body);
     console.log(loginResponse);
     if (!loginResponse) {
       messageSignIn.textContent = "The email or password is incorrect";

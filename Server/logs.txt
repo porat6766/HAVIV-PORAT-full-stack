@@ -832,3 +832,33 @@
   Query parameters received: {} 
   Body parameters received: {"email":"tal@gmail.com","password":"tal"} 
   Status Code: 200 
+
+  Activity received at: 11/6/2024, 2:37:24 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"username":"liron","email":"liron@gmail.com","password":"liron123","age":"24"} 
+  Status Code: 200 
+
+  Activity received at: 11/6/2024, 2:38:53 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"liron@gmail.com","password":"liron12"} 
+  Status Code: 200 
+
+  Activity received at: 11/6/2024, 2:39:01 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {"email":"liron@gmail.com","password":"liron123"} 
+  Status Code: 200 
+
+  Activity received at: 11/6/2024, 2:39:06 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
+
+  Activity received at: 11/6/2024, 2:39:07 PM
+  Path parameters received: {} 
+  Query parameters received: {} 
+  Body parameters received: {} 
+  Status Code: 200 
