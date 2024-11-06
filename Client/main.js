@@ -2,6 +2,8 @@ import { userModel } from "./models/userModel.js";
 import { jokeModel } from "./models/jokeModel.js";
 import { view } from "./view.js";
 
+let email;
+
 // Element sign up
 const formSignUp = document.getElementById("form-sign-up");
 const usernameInput = document.getElementById("username");
@@ -35,6 +37,7 @@ if (formSignUp) {
     );
     console.log(dataIsSave);
     if (dataIsSave) window.location.href = "./html-file/sign-in.html";
+    alert("Sign up successful!!");
   });
   (usernameInput.value = ""),
     (emailInput.value = ""),
@@ -44,6 +47,7 @@ if (formSignUp) {
 
 if (formSignIn) {
   formSignIn.addEventListener("submit", async (ev) => {
+    email = emailSignIn.value;
     ev.preventDefault();
     const body = { email: emailSignIn.value, password: passwordSignIn.value };
 
@@ -53,35 +57,49 @@ if (formSignIn) {
       messageSignIn.textContent = "The email or password is incorrect";
     } else {
       window.location.href = "menuPage.html";
+      alert("Log in successful! Welcome!");
+    }
+  });
+  (emailSignIn.value = ""), (passwordSignIn.value = "");
+}
+
+//toggle hidden addJoke
+if (addWindowButton) {
+  addWindowButton.addEventListener("click", () => {
+    addJokeForm.classList.toggle("hidden");
+  });
+}
+
+//get User Jokes Button
+if (getAllJokesButton) {
+  getAllJokesButton.addEventListener("click", async () => {
+    try {
+      const jokes = await jokeModel.fetchJokesAll("all");
+      view.renderJokes(jokes);
+      console.log(jokes);
+    } catch (error) {
+      console.log("error");
     }
   });
 }
 
-//toggle hidden addJoke
-addWindowButton.addEventListener("click", () => {
-  addJokeForm.classList.toggle("hidden");
-});
-
-//get User Jokes Button
-getAllJokesButton.addEventListener("click", async () => {
-  try {
-    const jokes = await jokeModel.fetchJokesAll("all");
-    view.renderJokes(jokes);
-    console.log(jokes);
-  } catch (error) {
-    console.log("error");
-  }
-});
-
 //get random Jokes Button
-getRandomJokeButton.addEventListener("click", async () => {
-  try {
-    const jokes = await jokeModel.fetchJokesAll("random");
-    view.renderJokes([jokes]);
-    console.log(jokes);
-  } catch (error) {
-    console.log("error");
-  }
-});
+if (getRandomJokeButton) {
+  getRandomJokeButton.addEventListener("click", async () => {
+    try {
+      const jokes = await jokeModel.fetchJokesAll("random");
+      view.renderJokes([jokes]);
+      console.log(jokes);
+    } catch (error) {
+      console.log("error");
+    }
+  });
+}
 
-//get random Jokes Button
+//get my Jokes Button
+if (getUserJokesButton) {
+  getUserJokesButton.addEventListener("click", () => {
+    // jokeModel.getUserJokes();
+    console.log(email);
+  });
+}
