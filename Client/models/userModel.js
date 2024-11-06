@@ -1,11 +1,3 @@
-// const fetchUser = async () => {
-//   const response = await axios.get(
-//     `http://localhost:3001/api/user/${EndPoint}`
-//   );
-//   return response.data;
-// };
-
-//create user
 const APICallCreateUser = async (body) => {
   try {
     await axios.post(`http://localhost:3001/api/users/create`, body);

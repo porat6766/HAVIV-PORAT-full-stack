@@ -65,7 +65,7 @@ if (formSignIn) {
 
 //toggle hidden addJoke
 if (addWindowButton) {
-  addWindowButton.addEventListener("click", () => { 
+  addWindowButton.addEventListener("click", () => {
     addJokeForm.classList.toggle("hidden");
   });
 }
