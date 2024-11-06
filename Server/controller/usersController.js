@@ -1,11 +1,15 @@
 import User from "../models/userModel.js";
 import bcrypt from "bcryptjs";
 import dotenv from "dotenv";
+import jwt from "jsonwebtoken";
 
 dotenv.config();
 const hashKey = process.env.HashKey;
 const secretKey = hashKey;
 console.log(secretKey);
+
+const JWT_KEY = process.env.JWT_KEY;
+const JWT_EXPIRATION = { expiriesIn: "1h" };
 
 const hashPassword = async (userPassword) => {
   const saltRounds = 10;
@@ -32,7 +36,7 @@ const getAllUser = async (req, res) => {
   }
 };
 
-const getRandonUser = async (req, res) => {
+const getRandomUser = async (req, res) => {
   try {
     const randomUser = await User.aggregate([{ $sample: { size: 1 } }]);
     res.status(200).send(randomUser[0]);
@@ -65,10 +69,8 @@ const createUser = async (req, res) => {
 };
 
 const loginUser = async (req, res) => {
-  const { email, password } = req.body;
-  console.log(req.body);
-
   try {
+    const { email, password } = req.body;
     const foundUser = await User.findOne({ email });
     console.log(foundUser);
 
@@ -77,8 +79,8 @@ const loginUser = async (req, res) => {
     }
 
     const isAuth = await comparePassword(password, foundUser.password);
-    // console.log(isAuth);
-
+    const { _id, username } = foundUser;
+    const filteredUser = { _id, username };
     if (!isAuth) {
       return res.status(401).send({ message: "Invalid password!" });
     }
@@ -190,7 +192,7 @@ const deleteUserByID = async (req, res) => {
 };
 
 export const controllerUsers = {
-  getRandonUser,
+  getRandomUser,
   homePage,
   createUser,
   getUserByID,
