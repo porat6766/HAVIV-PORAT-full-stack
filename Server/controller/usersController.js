@@ -6,10 +6,6 @@ import jwt from "jsonwebtoken";
 dotenv.config();
 const hashKey = process.env.HashKey;
 const secretKey = hashKey;
-console.log(secretKey);
-
-const JWT_KEY = process.env.JWT_KEY;
-const JWT_EXPIRATION = { expiriesIn: "1h" };
 
 const hashPassword = async (userPassword) => {
   const saltRounds = 10;
@@ -55,7 +51,9 @@ const createUser = async (req, res) => {
       email: req.body.email,
       password: hashValuePassword,
       age: req.body.age,
+      role: req.body.role,
     });
+    console.log(newUser);
 
     await newUser.save();
     res.status(201).send({
@@ -72,23 +70,28 @@ const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
     const foundUser = await User.findOne({ email });
-    console.log(foundUser);
 
     if (!foundUser) {
       return res.status(404).send({ message: "User not found!" });
     }
 
     const isAuth = await comparePassword(password, foundUser.password);
-    const { _id, username } = foundUser;
-    const filteredUser = { _id, username };
     if (!isAuth) {
       return res.status(401).send({ message: "Invalid password!" });
     }
 
-    res.status(200).send({
-      message: "User logged in successfully!",
-      message: isAuth,
-    });
+    const { role } = foundUser;
+    const filteredUser = { role, email };
+
+    const setToken = createAndSetToken(filteredUser, res);
+
+    if (setToken) {
+      res.status(200).send({
+        message: "User logged in successfully!",
+        isAuth: isAuth,
+        setTken: "set token successfully",
+      });
+    }
   } catch (error) {
     console.error("Error logging in user:", error);
     res.status(500).send("Internal Server Error");
@@ -191,7 +194,29 @@ const deleteUserByID = async (req, res) => {
   }
 };
 
+const createAndSetToken = (user, res) => {
+  try {
+    const token = jwt.sign(
+      { _id: user.email, role: user.role },
+      process.env.JWT_KEY,
+      { expiresIn: "1h" }
+    );
+
+    res.cookie("authToken", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "strict",
+      maxAge: 3600000,
+    });
+    return true;
+  } catch (error) {
+    console.error("Error creating and setting token:", error);
+    throw new Error("Error creating and setting token");
+  }
+};
+
 export const controllerUsers = {
+  createAndSetToken,
   getRandomUser,
   homePage,
   createUser,

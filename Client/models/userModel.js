@@ -6,6 +6,8 @@ const createUser = async (username, email, password, age) => {
     password,
     age,
   };
+  console.log(userData);
+  
   try {
     await axios.post(`http://localhost:3001/api/users/create`, userData);
     return true;
