@@ -1,13 +1,15 @@
 import express from "express";
 import { controllerUsers } from "../controller/usersController.js";
 
+import { verifyToken } from "../middleware/auth.js";
+
 const router = express.Router();
 
 router.get("/", controllerUsers.homePage);
 
 router.get("/all", controllerUsers.getAllUser);
 
-router.get("/random", controllerUsers.getRandonUser);
+router.get("/random", controllerUsers.getRandomUser);
 
 router.post("/create", controllerUsers.createUser);
 
